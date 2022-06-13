@@ -1,0 +1,86 @@
+.main {
+    background-color: rgb(240, 235, 235);
+    padding: 4%
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    
+    width: 50%;
+    
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  /* =========================
+       Testimonials Area CSS 
+      ========================= */
+      .single-testimonial-item p {
+        max-width: 1250px;
+        margin: 50px auto;
+        font-size: 20px;
+        font-weight: 500;
+        color: #626262;
+        line-height: 30px;
+        font-style: italic;
+    }
+    .single-testimonial-item i {
+        font-size: 20px;
+    }
+    .client-profile {
+        width: 900px;
+        height: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .client-profile img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .client-info h3 {
+        margin: 25px 0 2px;
+    }
+    .client-info span {
+       font-size: 16px;
+        font-style: italic;
+    }
+    .testimonial-slides .owl-nav div {
+      top: 50%;
+      font-size: 50px !important;
+      margin-top: -20px !important;
+      opacity: 0.8;
+      position: absolute;
+      background-color: transparent !important;
+      left: 0px;
+      text-align: center;
+        transition: all 0.4s ease 0s;
+        -webkit-transition: all 0.4s ease 0s;
+    }
+    .testimonial-slides .owl-nav div:hover {
+        opacity: 1;
+        color: #848484;
+    }
+    .testimonial-slides .owl-nav div.owl-next {
+      left: auto;
+      right: 0;
+    }
+    /* =========================
+        End Testimonials Area CSS 
+       ========================= */
